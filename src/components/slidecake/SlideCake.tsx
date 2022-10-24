@@ -1,15 +1,23 @@
 import cakeimage from '../../assets/img/cake.jpg'
+import { FC } from 'react'
+import './SlideCake.css'
 
-const SlideCake = (desc: string) => {
-	;<div>
-		<img src={cakeimage} alt='imagem do bolo' />
-		<div>
-			<ul>
-				<li>
-					<a>{desc}</a>
-				</li>
-			</ul>
+interface SlideCakeProps {
+	text: Array<string>
+	day: string
+}
+
+const SlideCake: FC<SlideCakeProps> = ({ text, day }) => {
+	return (
+		<div className='container'>
+			<img className='imagecake' src={cakeimage} alt='imagem do bolo' />
+			<a>{day}</a>
+			{text.map((tex) => (
+				<ul>
+					<li>{tex}</li>
+				</ul>
+			))}
 		</div>
-	</div>
+	)
 }
 export default SlideCake

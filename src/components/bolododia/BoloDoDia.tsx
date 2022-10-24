@@ -1,27 +1,27 @@
 interface CakesWeek {
 	day: string
-	desc: string
+	desc: Array<string>
 }
 const cakesWeek: CakesWeek[] = [
 	{
 		day: 'monday',
-		desc: 'Bolo de Chocolate',
+		desc: ['bolo de chocolate', 'bolo de beijinho', 'bolo de nutella'],
 	},
 	{
 		day: 'tuesday',
-		desc: 'Bolo de Beijinho ',
+		desc: ['bolo de chocolate', 'bolo de beijinho', 'bolo de nutella'],
 	},
 	{
 		day: 'wednesday',
-		desc: 'Bolo de morango',
+		desc: ['bolo de chocolate', 'bolo de beijinho', 'bolo de nutella'],
 	},
 	{
 		day: 'thursday',
-		desc: 'Bolo de Nutella',
+		desc: ['bolo de chocolate', 'bolo de beijinho', 'bolo de nutella'],
 	},
 	{
 		day: 'friday',
-		desc: 'Bolo de Chocolate',
+		desc: ['bolo de chocolate', 'bolo de beijinho', 'bolo de nutella'],
 	},
 ]
 

@@ -1,0 +1,9 @@
+.imagecake{
+	width: 60%;
+	height: 300px;
+}
+.container{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}

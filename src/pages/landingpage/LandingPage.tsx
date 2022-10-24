@@ -1,6 +1,10 @@
 import { Carousel } from '@mantine/carousel'
+import cakesWeek from '../../components/bolododia/BoloDoDia'
+import { SlideCake } from '../../components/slidecake'
 import './LandingPage.css'
 const LandingPage = () => {
+	console.log(cakesWeek)
+
 	return (
 		<Carousel
 			className='Container'
@@ -9,7 +13,11 @@ const LandingPage = () => {
 			withIndicators
 			height={600}
 		>
-			<Carousel.Slide>1</Carousel.Slide>
+			{cakesWeek.map((cakename) => (
+				<Carousel.Slide>
+					<SlideCake text={cakename.desc} day={cakename.day} />
+				</Carousel.Slide>
+			))}
 		</Carousel>
 	)
 }
